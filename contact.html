@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Page Styling */
+        body {
+            background-color: #222;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Contact Information Container */
+        .contact-container {
+            background: linear-gradient(135deg, #333, #444);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 450px;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Heading Style */
+        h2 {
+            color: #007ced;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Contact Details Styling */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 0;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        /* Last Item without Border */
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Icon Styling */
+        .contact-item i {
+            color: #007ced;
+            font-size: 24px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        /* Hover Effects */
+        .contact-item:hover {
+            transform: scale(1.05);
+            color: #007ced;
+        }
+
+        .contact-item:hover i {
+            color: #ffffff;
+            transform: scale(1.2);
+        }
+
+        /* Link Styling */
+        .contact-item a {
+            color: #007ced;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #ffffff;
+        }
+
+        /* Underline Effect on Hover */
+        .contact-item a::after {
+            content: "";
+            position: absolute;
+            left: 10%; /* Centers the underline */
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #007ced;
+            box-shadow: 5px 13px 30px rgb(203, 199, 199); ; /* Faded white shadow */
+            transition: width 0.3s ease;
+        }
+
+        .contact-item a:hover::after {
+            width: 80%; /* Reduced width */
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <strong>Email:</strong> <a href="nimishagarwal932006@gmail.com">nimishagarwal932006@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <strong>Phone:</strong> <a href="tel:+917906139937">+91 7906139937</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nimish-agarwal-b0062b307" target="_blank">LinkedIn Profile</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <strong>GitHub:</strong> <a href="https://github.com/Nimish9306" target="_blank">github.com/Nimish9306</a>
+        </div>
+    </div>
+</body>
+</html>
+

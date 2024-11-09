@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Page Styling */
+        
+            body {
+    background-color: #222;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Projects Container */
+        .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+        /* Project Box */
+        .project-box {
+            background: #444;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        /* Hover Effect on Project Box */
+        .project-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Project Image */
+        .project-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover Effect on Project Image */
+        .project-box:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Project Title */
+        .project-box h3 {
+            color: #007ced;
+            font-size: 24px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* Project Description */
+        .project-box p {
+            color: #ddd;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Hover Effect on Project Description */
+        .project-box:hover p {
+            color: #ffffff;
+        }
+
+        /* Project Link (Hidden until hover) */
+        .project-box a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            text-decoration: none;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            /* Projects Container */
+            .projects-container {
+                padding: 20px;
+            }
+
+            /* Project Box */
+            .project-box {
+                padding: 15px;
+                font-size: 14px;
+            }
+
+            /* Project Title */
+            .project-box h3 {
+                font-size: 20px;
+            }
+
+            /* Project Description */
+            .project-box p {
+                font-size: 14px;
+            }
+        }
+
+        /* Media Query for Small Mobile Devices */
+        @media (max-width: 480px) {
+            /* Project Box */
+            .project-box {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+            /* Project Title */
+            .project-box h3 {
+                font-size: 18px;
+            }
+
+            /* Project Description */
+            .project-box p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="projects-container">
+        <!-- Example Project 1 -->
+        <div class="project-box">
+            <a href="https://dancing-kangaroo-b5620a.netlify.app/" target="_blank"></a>
+            <img src="images\Screenshot (1239).png" alt="Project 1 Image">
+            <h3>Project 1: iDragon Game</h3>
+            <p>This project is a responsive web design for a client in the fashion industry. It includes a modern UI with smooth animations and a fluid layout.</p>
+        </div>
+
+        <!-- Example Project 2 -->
+        <div class="project-box">
+            <a href="https://spotify-clone8979.netlify.app/" target="_blank"></a>
+            <img src="images\Generic-FTR-headers_V10-1920x733.jpg" alt="Project 2 Image">
+            <h3>Project 2: Spotify Clone</h3>
+            <p>A Spotify Clone web application that replicates essential features of Spotify, including music playback, playlists, and search functionality. It offers a responsive design and user authentication, allowing users to explore a music library, create playlists, and enjoy seamless playback controls. Built with Html, Css and JavaScript, this project showcases skills in full-stack development and API integration.</p>
+        </div>
+
+        <!-- Example Project 3 -->
+        <div class="project-box">
+            <a href="https://jazzy-cendol-352aad.netlify.app/" target="_blank"></a>
+            <img src="images\28463996-tic-tac-toe.jpg" alt="Project 3 Image">
+            <h3>Project 3: My Tic Tac Toe</h3>
+            <p>A classic Tic Tac Toe game where two players take turns marking X's and O's on a 3x3 grid. 
+             Built with HTML, CSS, and JavaScript, it features a simple, responsive design.</p>
+        </div>
+
+        <!-- Example Project 4 -->
+        <div class="project-box">
+            <a href="https://parallax-website123.netlify.app/" target="_blank"></a>
+            <img src="images\Screenshot (1241).png" alt="Project 4 Image">
+            <h3>Project 4: parallax Website</h3>
+            <p>This platform is designed for viewers to explore the nature, connect with nature. This project uses HTMl and CSS, it features a simple responsive design.</p>
+        </div>
+    </div>
+
+</body>
+</html>
